@@ -1,0 +1,11 @@
+{
+  "name": "watermelon-game",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.7",
+    "@netlify/functions": "^6.0.3",
+    "@netlify/identity": "^2.0.0"
+  }
+}

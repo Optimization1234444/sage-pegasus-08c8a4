@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f5efdd"><title>合成大晏奚</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><h1><span class="brand-icon" aria-hidden="true"></span>合成大晏奚</h1><span class="header-note">不着急，再放一颗。</span></header>
+<main>
+<section class="play-panel" aria-label="合成大晏奚游戏">
+<div class="scorebar"><div><small>本局得分</small><strong id="score">0</strong></div><div class="game-actions"><button id="pause">暂停</button><button id="restart">重开</button></div></div>
+<div class="board-wrap"><canvas id="game" width="400" height="600" tabindex="0" aria-label="图标合成区域。左右方向键瞄准，空格或回车投放，P 暂停。"></canvas><div id="overlay" class="overlay" hidden><span class="eyebrow" id="overlayLabel">休息一下</span><h2 id="overlayTitle">休息一下，再继续合成。</h2><p id="overlayText">准备好了，就继续合成吧。</p><button id="continue" class="primary">继续游戏</button></div></div>
+<div class="board-footer"><span>相同图标碰撞即可合成</span><span id="status" class="sr-only" role="status" aria-live="polite"></span><span class="live-dot" aria-hidden="true"></span></div>
+<div class="mobile-controls"><button id="left" aria-label="向左瞄准">←</button><button id="drop" class="primary">投放图标 ↓</button><button id="right" aria-label="向右瞄准">→</button></div>
+</section>
+<div class="controls-hint"><p class="phone-help"><strong>手机 / 平板</strong>在游戏区域按住并左右拖动瞄准，松手投放；也可点击下方 ← → 调整位置，再点「投放图标」。</p><p class="desktop-help"><strong>电脑</strong>移动鼠标瞄准，点击投放；也可用 ← → 调整，空格或回车投放，P 键暂停或继续。</p><p class="rules-help">相同图标碰撞即可合成 · 图标堆过虚线持续 2 秒，本局结束。</p></div>
+</main><script src="/auth-redirect.js"></script><script src="/game.js"></script></body></html>
