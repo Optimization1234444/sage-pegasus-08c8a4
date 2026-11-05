@@ -7,6 +7,10 @@ import { fileURLToPath } from 'url';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.get('/', (req, res) => {
+  res.send('服务部署成功！欢迎访问 yanxi99999 应用');
+});
+
 // 获取当前文件目录路径
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
